@@ -162,3 +162,50 @@ footer ul li {
   max-width: 150px;
   margin-left: 20px;
  }
+
+ .only-mobile{
+  display: none;
+ }
+
+ @media (max-width: 865px) {
+  .only-desktop{
+    display: none;
+  }
+  .container{
+    justify-content: center;
+    width: 95%;
+
+  }
+  .only-mobile{
+    display: flex;
+    height: 250px;
+    margin-top: 20px;
+   }
+  body {
+    height: auto;
+  }
+  .content {
+    width: 100%;
+  }
+
+  .buttons-mobile{
+    width: 50%;
+
+  }
+
+  footer {
+    position: relative;
+
+  }
+  
+  body{
+    flex-direction: column; 
+
+  }
+
+  footer ul {
+    /* display: flex; */
+    flex-direction:column;
+    align-items: center;
+  }
+}
